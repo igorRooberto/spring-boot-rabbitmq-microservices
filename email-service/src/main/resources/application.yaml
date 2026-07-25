@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: email-service
+
+  server:
+    port: 8081
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sentinelauthgateway@gmail.com
+    password: mcrgddmcgpthlfrf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
